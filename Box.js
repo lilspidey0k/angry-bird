@@ -1,19 +1,9 @@
-class Box{
-    constructor(){
-        var rest = {
-            restitution: 1
-          }
-        this.body=Bodies.rectangle(100,50,50,50,rest);
-        World.add(myWorld,this.body);
+class Box extends Baseclass{
+    constructor(x,y){
+    super(x,y,70,70);
+    this.image=loadImage("sprites/wood1.png");
         
     }
-    
-     display(){
 
-        var pos = this.body.position;
-         rectMode(CENTER);
-         fill("red");
-         rect(pos.x,pos.y,50,50);
-     }  
     
 }
